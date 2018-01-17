@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "github-app": "^3.2.0",
+    "github-webhook-handler": "git+https://github.com/stephengroat/github-webhook-handler"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-emulator": "latest"
+  }
+}
