@@ -8,7 +8,7 @@ var handler = createHandler({
 });
 
 exports.createServer = function createServer(req, res) {
-  console.log('calcsha1=', crypto.createHmac('sha1', options.secret).update(req.body.toString()).digest('hex'))
+  console.log('calcsha1=', crypto.createHmac('sha1', options.secret).update(req.body.toString()).digest('hex'));
   handler(req, res, function (err) {
     console.error('Error:', err)
     res.statusCode = 404
